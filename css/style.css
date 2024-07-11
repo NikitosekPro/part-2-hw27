@@ -1,0 +1,68 @@
+body {
+    position: relative;
+}
+
+
+.menu-container {
+    position: absolute;
+    transform: translateY(50%);
+    height: 300px;
+    width: 100px;
+    background-color: gray;
+    overflow: hidden;
+    transform: translateX(-25px);
+    transition: width 600ms ease-in-out;
+    
+}
+
+.menu-container:hover {
+    
+    width: 200px;
+    overflow: visible;
+    transform: translateX(1);
+}
+
+.menu-container:hover .side-menu-list {
+    transform: translateX(0);
+    
+}
+
+
+
+
+.side-title {
+    display: flex;
+    font-size: 17px;
+    color: rgb(220, 224, 228);
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translateY(50%);
+    transform: rotate(90deg);
+}
+
+.menu-container:hover .side-title {
+    visibility: hidden;
+}
+
+
+.side-menu-list {
+    list-style: url(../img/dot-removebg-preview\ \(1\).png);
+    font-size: 20px;
+    margin-top: 60px;
+    line-height: 20px;
+    transform: translateY(50%);
+    margin-left: 70px;
+    transform: translateX(-125px);
+    transition: transform 600ms ease-in-out;
+}
+
+.side-menu-item {
+    width: 80px;
+    cursor: pointer;
+}
+
+.side-menu-item:hover {
+    color: orange;
+}
+
